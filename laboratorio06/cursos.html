@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion a cursos</title>
+</head>
+<body>
+     <header>
+    <h1>Cursos</h1>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="registro.html">Registro</a> |
+        <a href="lenguajes.html">Lenguajes</a> |
+        <a href="validacion.html">Validación</a> |
+        <a href="cursos.html">Cursos</a>
+    </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <br>
+
+            <!-- Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            <br><br>
+
+            <!-- Apellido -->
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+            <br><br>
+
+            <!-- DNI -->
+            <label for="dni">Documento de identidad:</label>
+            <input type="text" id="dni" name="dni" placeholder="Ej: 12345678" required>
+            <br><br>
+
+            <!-- Correo -->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            <br><br>
+
+            <!-- Selección de curso -->
+            <label for="curso">Selecciona un curso:</label>
+            <select id="curso" name="curso" required>
+                <option value="">-- Selecciona un curso --</option>
+                <option value="html-css">HTML y CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+            <br><br>
+
+            <!-- Modalidad (solo una opción) -->
+            <p>Modalidad:</p>
+            <label><input type="radio" name="modalidad" value="presencial" required> Presencial</label>
+            <br>
+            <label><input type="radio" name="modalidad" value="virtual"> Virtual</label>
+            <br><br>
+
+            <!-- Horarios (pueden ser varios) -->
+            <p>Horarios disponibles:</p>
+            <label><input type="checkbox" name="horario" value="mañana"> Mañana</label>
+            <br>
+            <label><input type="checkbox" name="horario" value="tarde"> Tarde</label>
+            <br>
+            <label><input type="checkbox" name="horario" value="noche"> Noche</label>
+            <br><br>
+
+            <!-- Comentarios -->
+            <label for="comentarios">Comentarios adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe aquí tus comentarios..."></textarea>
+            <br><br>
+
+            <!-- Botones -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </main>
+</body>
+</html>
