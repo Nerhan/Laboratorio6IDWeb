@@ -16,38 +16,37 @@
         <a href="cursos.html">Cursos</a>
     </nav>
     </header>
+
     <main>
-        <form>
+        <form action="#" method="post">
             <h3>¿Qué lenguajes conoces?</h3>
             <label>
                 <input type="checkbox" name="lenguajes" value="html"> HTML
-            </label>
-            <br>
+            </label><br>
+
             <label>
                 <input type="checkbox" name="lenguajes" value="css"> CSS
-            </label>
-            <br>
+            </label><br>
+
             <label>
                 <input type="checkbox" name="lenguajes" value="javascript"> JavaScript
-            </label>
-            <br>
+            </label><br>
+
             <label>
                 <input type="checkbox" name="lenguajes" value="python"> Python
-            </label>
-            <br>
+            </label><br>
+
             <label>
                 <input type="checkbox" name="lenguajes" value="java"> Java
             </label>
             <br><br>
 
-            <label>
-                ¿Cuántas horas de programación estudias al día?
-                <br><br>
-                <input type="number" min="0" max="24" required>
-            </label>
+            <label for="horas"><h3>¿Cuántas horas de programación estudias al día?</h3></label>
+            <input type="number" id="horas" name="horas" min="0" max="24" required>
             <br><br>
 
             <button type="submit">Guardar</button>
+            <button type="reset">Resetear</button>
         </form>
     </main>
 </body>
